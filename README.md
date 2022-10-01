@@ -28,8 +28,17 @@ npm run start
 ```
 
 ## React Components
+
+### How a React component works
 * A section on the browser is called a component (nav bar, blog, side bar, etc...)
 * Inside a component is a function that returns a jsx template.
 * Each component has each own jsx template that looks like an HTML. 
-* 'index.js' takes the components into its root.render function and renders them to the browser.
 * At the end of each component file, always export the component.
+* Import the components to 'index.js' in order to use them.
+* 'index.js' takes the components into its root.render function and renders them to the browser.
+* App.js is the root component. Children components could be nested inside parent components by inserting <ChildComponent /> into parents' function.
+
+### Using dynamic values in jsx template
+* Declare the variables before the return section.
+* Retrieve the value inside return section by putting the variable name inside { }.
+* Note: React can't output variable of Object and Boolean type.
