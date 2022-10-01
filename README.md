@@ -47,6 +47,7 @@ npm run start
 * Retrieve the value inside return section by putting the variable name inside { }.
 * Note: React can't output variable of Object and Boolean type.
 
-### Styling in React app
+
+## Styling in React app
 * Typical practice is to put styling into index.css. This will apply CSS over all the components that 'index.js' takes in. 
 * Another way is to use 'style' attribute inside jsx tags following the syntax: style={ {color: 'white'} }. Outer braces indicate a dynamic-variable container. Inner braces represent an object.
