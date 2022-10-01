@@ -10,7 +10,7 @@ This approach doesn't require the server to send HTML page back for every click 
 * Setting -> Search 'emmet' -> Include Languages -> Add Item -> Item: javascript and Value: javascriptreact. This allows handy shortcuts. Eg: .hello will create a div with class = "hello".
 
 ## Create a React App
-Run the code below to create a React app.
+Run the code below to create a React app:
 ```
 npx create-react-app project_name
 ```
@@ -22,7 +22,14 @@ Cd into the project_name folder.
 
 'Src' folder stores code. All of the components on the website reside in this folder 'index.js' is responsible for taking the components and rendering them on the website.
 
-Preview the app in a local development server.
+Preview the app in a local development server:
 ```
 npm run start
 ```
+
+## React Components
+* A section on the application is called a component (nav bar, blog, side bar, etc...)
+* Each component has each own jsx template that looks like an HTML. 
+* 'index.js' takes takes the components in its root.render function and renders them to the browser.
+* Inside a component is a function that returns a jsx template.
+* At the end of each component file, always export the component.
