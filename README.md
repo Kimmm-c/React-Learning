@@ -1,13 +1,16 @@
 # React-Learning
 
+
 ## Concept
 Used for Single Page Applications (SPA). This means that the server only needs to send 1 HTML file to the browser and let React handle the rest, including routing.
 
 This approach doesn't require the server to send HTML page back for every click and hence the faster website performance.
 
+
 ## Recommended Setting for VSC
 * Install Simple React Snippets.
 * Setting -> Search 'emmet' -> Include Languages -> Add Item -> Item: javascript and Value: javascriptreact. This allows handy shortcuts. Eg: .hello will create a div with class = "hello".
+
 
 ## Create a React App
 Run the code below to create a React app:
@@ -27,6 +30,7 @@ Preview the app in a local development server:
 npm run start
 ```
 
+
 ## React Components
 
 ### How a React component works
@@ -42,3 +46,7 @@ npm run start
 * Declare the variables before the return section.
 * Retrieve the value inside return section by putting the variable name inside { }.
 * Note: React can't output variable of Object and Boolean type.
+
+### Styling in React app
+* Typical practice is to put styling into index.css. This will apply CSS over all the components that 'index.js' takes in. 
+* Another way is to use 'style' attribute inside jsx tags following the syntax: style={ {color: 'white'} }. Outer braces indicate a dynamic-variable container. Inner braces represent an object.
