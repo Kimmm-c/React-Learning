@@ -9,4 +9,20 @@ This approach doesn't require the server to send HTML page back for every click 
 * Install Simple React Snippets.
 * Setting -> Search 'emmet' -> Include Languages -> Add Item -> Item: javascript and Value: javascriptreact. This allows handy shortcuts. Eg: .hello will create a div with class = "hello".
 
-## 
+## Create a React App
+Run the code below to create a React app.
+```
+npx create-react-app project_name
+```
+Cd into the project_name folder.
+
+'Node_modules' folder contains the app dependencies.
+
+'Public folder' holds what's displayed in the browser. This is where the only HTML file locates.
+
+'Src' folder stores code. All of the components on the website reside in this folder 'index.js' is responsible for taking the components and rendering them on the website.
+
+Preview the app in a local development server.
+```
+npm run start
+```
