@@ -28,8 +28,8 @@ npm run start
 ```
 
 ## React Components
-* A section on the application is called a component (nav bar, blog, side bar, etc...)
-* Each component has each own jsx template that looks like an HTML. 
-* 'index.js' takes takes the components in its root.render function and renders them to the browser.
+* A section on the browser is called a component (nav bar, blog, side bar, etc...)
 * Inside a component is a function that returns a jsx template.
+* Each component has each own jsx template that looks like an HTML. 
+* 'index.js' takes the components into its root.render function and renders them to the browser.
 * At the end of each component file, always export the component.
