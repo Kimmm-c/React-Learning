@@ -40,7 +40,7 @@ npm run start
 * At the end of each component file, always export the component.
 * Import the components to 'index.js' in order to use them.
 * 'index.js' takes the components into its root.render function and renders them to the browser.
-* App.js is the root component. Children components could be nested inside parent components by inserting <ChildComponent /> into parents' function.
+* App.js is the root component. Children components could be nested inside parent components by inserting `<ChildComponent />` into parents' function.
 
 ### Using dynamic values in jsx template
 * Declare the variables before the return section.
@@ -51,3 +51,12 @@ npm run start
 ## Styling in React app
 * Typical practice is to put styling into index.css. This will apply CSS over all the components that 'index.js' takes in. 
 * Another way is to use 'style' attribute inside jsx tags following the syntax: style={ {color: 'white'} }. Outer braces indicate a dynamic-variable container. Inner braces represent an object.
+
+
+## Click Events
+### Hook a handleClick function to a button:
+* Declare the function above return.
+* Use onClick attribute inside button tag. Eg: `<button onClick= { () => handleClick(param) }>`.
+
+### Event argument
+Event argument is a default argument when a function is fired.
