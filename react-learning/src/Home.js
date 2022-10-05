@@ -1,5 +1,4 @@
-import { useState } from 'react';
-
+import { useEffect, useState } from 'react';
 import React from 'react'
 import ArticleList from './ArticleList';
 
@@ -16,11 +15,17 @@ const Home = () => {
         setArticle(newArticles);
     }
 
-
+    const [name, setName] = useState('nami')
+    useEffect(() => {
+        console.log('useEffect triggered')
+    }, [name])
+    
     return (
         <div className="home">
             <ArticleList articles={articles} handleDelete={handleDelete} />
-            <ArticleList articles={articles.filter((article) => article.author === "A")} />
+            {/* <ArticleList articles={articles.filter((article) => article.author === "A")} /> */}
+            <p>{name}</p>
+            <button onClick = {() => setName('robin')}>Change name</button>
         </div>
     )
 }

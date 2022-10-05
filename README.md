@@ -104,3 +104,13 @@ const [articles, setArticle] = useState(
     )
 ```
 The `<ArticleList articles={articles}>` passes the list of articles to the child component (ArticleList).
+
+## useEffect and Dependencies
+useEffect is used when we need to run something at every render.
+```
+const [name, setName] = useState('nami')
+    useEffect(() => {
+        console.log('useEffect triggered')
+    }, [name])
+```
+The second argument of useEffect function ([name]) is called a dependency. Which means useEffect funtion is fired only if the render is caused by setName.
