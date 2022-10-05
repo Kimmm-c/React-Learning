@@ -11,10 +11,16 @@ const Home = () => {
         { title: 'Article 3', body: 'A body of article 3', author: 'A', id: 3 },
         ]);
 
+    const handleDelete = (id) => {
+        const newArticles = articles.filter(article => article.id !== id)
+        setArticle(newArticles);
+    }
+
+
     return (
         <div className="home">
-            <ArticleList articles={articles}/>
-            <ArticleList articles={articles.filter((article) => article.author === "A")}/>
+            <ArticleList articles={articles} handleDelete={handleDelete} />
+            <ArticleList articles={articles.filter((article) => article.author === "A")} />
         </div>
     )
 }
