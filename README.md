@@ -59,4 +59,12 @@ npm run start
 * Use onClick attribute inside button tag. Eg: `<button onClick= { () => handleClick(param) }>`.
 
 ### Event argument
-Event argument is a default argument when a function is fired.
+Event argument is a default argument when a click function is fired.
+
+### React State (useState hook)
+* State of a component: Data being used in the component at that moment.
+* How it works: Make a value of a variable reactive to an event (Eg: Render the word 'Hello World' on the browser -> when a button is click -> the word is changed to 'Welcome home') 
+* To use React hook: 
+    * Import useState: `import { useState } from react` 
+    * Create a list that takes in the return values of function useState. First element is the reactive value, second element is the function name used to change the value. (Eg: const [name, setName] = useState("Hello World")).
+    
