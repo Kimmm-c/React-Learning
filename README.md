@@ -87,3 +87,20 @@ const [articles, setArticle] = useState(
     </div>
   )
   ```
+## Props
+* Allow passing data from parent component to child component.
+* How to use props: 
+```
+const [articles, setArticle] = useState(
+        [{ title: 'Article 1', body: 'A body of article 1', author: 'A', id: 1 },
+        { title: 'Article 2', body: 'A body of article 2', author: 'B', id: 2 },
+        { title: 'Article 3', body: 'A body of article 3', author: 'A', id: 3 },
+        ]);
+
+    return (
+        <div className="home">
+            <ArticleList articles={articles}/>
+        </div>
+    )
+```
+The `<ArticleList articles={articles}>` passes the list of articles to the child component (ArticleList).
