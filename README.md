@@ -61,10 +61,29 @@ npm run start
 ### Event argument
 Event argument is a default argument when a click function is fired.
 
-### React State (useState hook)
+## React State (useState hook)
 * State of a component: Data being used in the component at that moment.
 * How it works: Make a value of a variable reactive to an event (Eg: Render the word 'Hello World' on the browser -> when a button is click -> the word is changed to 'Welcome home') 
 * To use React hook: 
     * Import useState: `import { useState } from react` 
     * Create a list that takes in the return values of function useState. First element is the reactive value, second element is the function name used to change the value. (Eg: const [name, setName] = useState("Hello World")).
-    
+
+## Render a list of objects using .map()
+```
+const [articles, setArticle] = useState(
+        [{title: 'Article 1', body: 'A body of article 1', author: 'A', id: 1},
+        {title: 'Article 2', body: 'A body of article 2', author: 'B', id: 2},
+        {title: 'Article 3', body: 'A body of article 3', author: 'A', id: 3},
+        ]);
+
+  return (
+    <div className="home">
+        {articles.map((article) => (
+            <div className="article-preview" key={article.id}>
+                <h3>{article.title}</h3>
+                <p>Author: {article.author}</p>
+            </div>
+        ))}
+    </div>
+  )
+  ```
